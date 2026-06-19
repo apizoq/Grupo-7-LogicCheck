@@ -32,7 +32,7 @@ facible.
 
 1. Abrir [Google Colab](https://colab.research.google.com)
 2. Ir a **Archivo → Abrir notebook → GitHub**
-3. Pegar la URL del repositorio: `https://github.com/tramirezv-dev/Proyecto-final-CC`
+3. Pegar la URL del repositorio: `https://github.com/apizoq/Grupo-7-LogicCheck.git`
 4. Seleccionar `notebook/proyecto_colab.ipynb`
 5. Ejecutar todo: **Runtime → Run all**
 
