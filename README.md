@@ -36,3 +36,10 @@ facible.
 4. Seleccionar `Notebook de Google Colab-GRUPO 7.ipynb`
 5. Ejecutar todo: **Runtime → Run all**
 
+## Qué hace el algoritmo
+El algoritmo LogicCheck funciona como un detective inteligente que busca una combinación correcta de respuestas (Verdadero o Falso) para las variables de una fórmula, usando una estrategia llamada Backtracking (Búsqueda con Retroceso).
+1.Prueba con orden: El algoritmo le da un valor (True o False) a una variable a la vez, avanzando como si recorriera un árbol de decisiones.
+
+2.Poda (Ahorra tiempo): Después de cada paso, revisa las reglas. Si ve que una regla ya se rompió y es imposible de arreglar, corta (poda) ese camino de inmediato para no perder tiempo explorándolo.
+
+3.Retrocede (Backtrack): Al darse cuenta de que ese camino no tiene salida, da un paso atrás, borra su última decisión e intenta con la otra opción
