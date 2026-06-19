@@ -49,9 +49,12 @@ El algoritmo LogicCheck funciona como un detective inteligente que busca una com
 
 ## Ejemplos entrada y salida - Resultados.
 
-La fórmula lógica $(A \lor B) \land (\neg A \lor C)$ se representa como:
-```python
-formula = [
-    ["A", "B"],   # (A O B)
-    ["-A", "C"]   # (No A O C)
-]
+| Métrica / Atributo | Ejemplo 1: Fórmula Satisfacible | Ejemplo 2: Fórmula Insatisfacible |
+| :--- | :--- | :--- |
+| **Fórmula de Entrada (`Formulas`)** | `[["A", "B"], ["-A", "C"]]` | `[["A"], ["-A"]]` |
+| **Representación Lógica** | $(A \lor B) \land (\neg A \lor C)$ | $A \land \neg A$ |
+| **Variables del Sistema** | `["A", "B", "C"]` | `["A"]` |
+| **Resultado del Verificador** | **SATISFACIBLE** | **INSATISFACIBLE** |
+| **Asignación Encontrada (`Solución`)** | `{"A": true, "B": true, "C": true}` | `None` (Ninguna) |
+| **Ramas Podadas (`Contador`)** | `0` (Encontró un camino limpio de inmediato) | `2` (Ambas opciones binarias fallaron) |
+| **Análisis de Comportamiento** | El algoritmo asigna las variables secuencialmente y se detiene exitosamente al hallar el primer modelo que satisface todas las cláusulas. | El algoritmo detecta contradicciones absolutas de manera temprana en cada nivel, lo que activa el mecanismo de retroceso y evita explorar estados inválidos profundos. |
