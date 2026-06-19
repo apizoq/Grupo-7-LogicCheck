@@ -20,12 +20,9 @@ Exposición: 19 de junio de 2026
 ## El problema
 
 LogicCheck Lab quiere una herramienta educativa para mostrar cómo una computadora puede razonar sobre fórmulas proposicionales pequeñas. La idea no es de-
-mostrar teoremas avanzados, sino hacer visible el proceso de asignar valores de verdad,
-
-detectar contradicciones y retroceder.
-Con pocas variables se puede hacer una tabla de verdad. Pero al aumentar el número de
-variables, el espacio de combinaciones crece rápidamente. La clave es detectar temprano
-cuando una cláusula ya no puede satisfacerse y evitar completar asignaciones inútiles.
+mostrar teoremas avanzados, sino hacer visible el proceso de asignar valores de verdad, detectar contradicciones y retroceder.
+Con pocas variables se puede hacer una tabla de verdad. Pero al aumentar el número de variables, el espacio de combinaciones crece rápidamente. La clave es
+detectar temprano cuando una cláusula ya no puede satisfacerse y evitar completar asignaciones inútiles.
 
 Lo que deben construir. Un notebook que reciba fórmulas en forma de lista de cláu-
 sulas, explore asignaciones de verdad con backtracking y determine si la fórmula es satis-
